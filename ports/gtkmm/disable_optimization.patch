@@ -1,0 +1,20 @@
+diff --git a/MSVC_Net2013/gtkmm.vcxproj b/MSVC_Net2013/gtkmm.vcxproj
+index ec56ed1..f0c0690 100644
+--- a/MSVC_Net2013/gtkmm.vcxproj
++++ b/MSVC_Net2013/gtkmm.vcxproj
+@@ -107,6 +107,7 @@
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+     <ClCompile>
+       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>$(GtkMMBuildDefs);_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+@@ -170,6 +171,7 @@
+     </Midl>
+     <ClCompile>
+       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
++      <Optimization>Disabled</Optimization>
+       <AdditionalIncludeDirectories>.\gtkmm;..\gtk;$(GlibEtcInstallRoot)\include\atkmm-1.6;$(GlibEtcInstallRoot)\lib\atkmm-1.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>$(GtkMMBuildDefs);_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
